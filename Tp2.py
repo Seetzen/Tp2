@@ -14,14 +14,14 @@ def main():
         random_number = randint(0, 100)
         not_found = True
         while not_found:
-            user_guess = int(input("Quelle numéro devinez-vous?\n"))
+            user_guess = int(input("Quelle numéro voulez-vous?\n"))
             nb_essaie += 1
             if user_guess < random_number:
-                print("Vôtre numéro est trop petit")
+                print("Il est trop petit")
             elif user_guess > random_number:
-                print("Vôtre numéro est trop grand.")
+                print("Il est trop grand.")
             elif user_guess == random_number:
-                print(f"Bravo! Vous avez devinez le numéro en {nb_essaie} essaies.")
+                print(f"Tu as reussi en {nb_essaie} essaies.")
                 rejouer = input("Voulez-vous rejouer? (y/n)")
                 not_found = False
                 if rejouer == "y":
