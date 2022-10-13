@@ -2,7 +2,7 @@
 Groupe 403
 code pour le jeux de devinette, TP2"""
 
-from random import *
+from random import randint
 nb_essaie = 0
 
 devinette = True
